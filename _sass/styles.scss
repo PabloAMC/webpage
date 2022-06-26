@@ -1,10 +1,46 @@
 // Import Core Clean Blog SCSS
 @import "../assets/vendor/startbootstrap-clean-blog/scss/styles.scss";
 
+$font-family: "Computer Modern", "Noto Serif", serif;
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Computer Modern", "Noto Serif", serif;
+  font-family: $font-family;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.tooltip, .btn, #mainNav, header.masthead .page-heading .subheading {
+  font-family: $font-family;
 }
 
 body {
   font-family: "Computer Modern", "Noto Serif", serif;
 }
+
+figure {
+  margin: 1em auto;
+  text-align: center;
+}
+
+figcaption {
+  color: rgba(0,0,0,0.54);
+  font-size: .85em;
+  line-height: 1.375em;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  color: #484848;
+}
+
+// Tooltips
+
+/*
+.tooltip > .arrow, .tooltip > .tooltip-inner {
+  background-color: #fff;
+  color: black;
+}
+*/
