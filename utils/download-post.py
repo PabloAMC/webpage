@@ -11,13 +11,13 @@ Poor person's AF/EA forum/LW post downloader.
 ################################################################################
 
 import re
+import os
 import sys
 import argparse
 import dateutil.parser
 from gql import gql, Client
 from markdownify import MarkdownConverter
 from gql.transport.aiohttp import AIOHTTPTransport
-
 
 #-------------------------------------------------------------------------------
 # CLI args
@@ -171,8 +171,13 @@ date: {date.strftime('%Y-%m-%d %H:%M:%S %Z')}
 {contents}
 '''
 
-with open(filename, 'w') as f:
+self_path = os.path.dirname(os.path.realpath(__file__))
+output_dir = os.path.join(self_path, 'output')
+output_path = os.path.join(output_dir, filename)
+
+os.makedirs(output_dir, exist_ok = True)
+with open(output_path, 'w') as f:
   f.write(file_contents)
 
 print('Done.')
-print(f'Output file: {filename}')
+print(f'Output file: {output_path}')

@@ -2,6 +2,8 @@
 layout: post
 title: "An Open Philanthropy grant proposal: Causal representation learning of human preferences"
 date: 2022-01-11 11:28:01 UTC
+#subtitle: 
+#background:
 ---
 
 *This is a proposal I wrote for the recent [Open Philanthropy call on AI Alignment projects](https://www.openphilanthropy.org/focus/global-catastrophic-risks/potential-risks-advanced-artificial-intelligence/request-for-proposals-for-projects-in-ai-alignment-that-work-with-deep-learning-systems). I am finishing my Ph.D. in quantum computing and I would like to start working on AI Alignment. Thus, this is my proposal for a postdoc-style grant to learn more about one area I think the community could pay more attention to. However, since I am quite new to this area, there might be things that I have overlooked. For that reason, if you see something that doesn't sound promising, or you disagree with it, I would be happy to know about it.*
