@@ -38,10 +38,10 @@ parser.add_argument(
 )
 
 parser.add_argument(
-  '-i',
   '--internal-converter',
   default = True,
-  help = 'Use the internal HTML to Markdown converter'
+  help = 'Whether to use the internal HTML to Markdown converter',
+  action = argparse.BooleanOptionalAction
 )
 
 args = parser.parse_args()
